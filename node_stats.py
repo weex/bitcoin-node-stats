@@ -24,7 +24,7 @@ if options.live:
 		data = {}
 		data = parsed  
 				
-		f = open("lastraw.txt", "w")
+		f = open("lastraw.json", "w")
 		f.write(json.dumps(raw))
 		f.close()
 else:
@@ -37,7 +37,7 @@ else:
 total_nodes = 0
 max_height = 0
 nodes = data[u'nodes']
-f = open("list_nodes.txt", "w")
+f = open("list_nodes.csv", "w")
 for ip in nodes:	
 	a = ip + "," + nodes[ip][1] + "," + str(int(nodes[ip][4]))
 	f.write(a + "\n")
