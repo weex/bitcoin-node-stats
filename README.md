@@ -8,3 +8,5 @@ Sample output:
     Max block height: 371549
     Total syncd nodes: 5773
     Total syncd XT nodes: 932
+
+The script also saves the downloaded json as lastraw.json and a comma separated values list of nodes with IP, Useragent, and block height as list_nodes.csv.
